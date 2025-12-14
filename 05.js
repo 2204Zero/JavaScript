@@ -94,11 +94,46 @@ g = -100
 do {console.log("we haven't reached one")}
 while(g>1)
 
+
 // Functions in Js
 
 function print() 
 {
 console.log("hello world")
 }
-
 print()
+
+// Storing a function into a variable
+a = 10
+b = 20
+const sum = (a,b) => {
+    let c = a + b;
+    return c;
+}
+console.log(sum(a,b))
+
+
+// Question. WAP to print the marks of a student in an object using for loop
+
+obj = {
+    "zero" : 10,
+    "mbee" : 20,
+    "feebi" : 30,
+}
+
+for (i in obj){
+    console.log(i,obj[i])                   // i -> key,  obj[i] -> values
+}
+
+
+// Question. Write a function to find the mean of 5 numbers
+a =10
+b = 20
+c = 30
+d = 40
+e = 50
+const avg = (a,b,c,d,e) => {
+    let i = (a+b+c+d+e)/5
+    return i
+}
+console.log(avg(a,b,c,d,e))
